@@ -134,7 +134,7 @@
 
                 <div class="col-lg-11 text-center mx-auto col-12">
                 <div class="col-lg-8 mx-auto" style="margin-top: -3em;">
-                  <h2>Projects</h2>
+                  <h2>Projects</h2><br>
                 </div>
                 </div>
 
