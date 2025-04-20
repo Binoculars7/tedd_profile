@@ -72,7 +72,7 @@
                         
                         <div class="custom-btn-group mt-4">
                           <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">See Projects</a>
+                          <a href="#project_list" class="btn custom-btn custom-btn-bg custom-btn-link">See Projects</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
 <div class="projects">
   <div class="project-card">
     <div class="project-image" style="background:url('images/project/project-image05.png') no-repeat center center/cover;"></div>
-    <div class="project-content">
+    <div class="project-content" id="project_list">
       <h2>Tom's Metal Site</h2>
       <p>
         A revamped version of the website of the company at my first job. You can see the original site 
