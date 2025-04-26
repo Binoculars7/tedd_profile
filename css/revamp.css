@@ -80,17 +80,17 @@
   }
   
   .live-demo {
-    background-color: #6a5acd !important;
+    background-color: #2d2b3d !important;
     color: white !important;
   }
   
   .live-demo:hover {
-    background-color: #5848c2 !important;
+    background-color: #2d2b3d !important;
   }
   
   .view-source {
     background-color: #f5f5f5 !important;
-    color: #6a5acd !important;
+    color: #2d2b3d !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
   }
   
