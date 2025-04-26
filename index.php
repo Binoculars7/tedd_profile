@@ -31,98 +31,166 @@
   </head>
   <body>
 
-    <!-- MENU -->
+    <!-- TITLE BAR/ MENU BAR -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Bolu</a>
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Mobile Developer</a>
 
            
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 
 
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                      
-                      </div>
-                    </div>
-                </ul>
+               
             </div>
         </div>
     </nav>
 
-    <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center" style="text-align: center; margin:auto;">
-                    <div class="about-text">
-                        
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hey, I'm Bolu Shotayo</span>
-                                
-                        </h1>
 
-                        <p class="okay">With 14 years of experience in digital, I’ve shaped my work across borders and disciplines – from filmmaking to product design. I’ve collaborated with French brands L’Oréal Pro and RATP on UX research.
 
-                        </p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-                          <a href="#project_list" class="btn custom-btn custom-btn-bg custom-btn-link">See Projects</a>
-                        </div>
-                    </div>
-                </div>
 
-             
 
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
+    <!-- DO NOT REMOVE from dev binoculars 'I used it for margin control'-->
     <section class="project py-5" id="project">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
 
-                      <div class="col-lg-8 mx-auto" style="margin-top: -3em;">
-                        <h2>Personal Info</h2>
-                      </div><br>
+                    
+    </section>     
 
 
 
-                    <!-- HTML -->
-<div class="about-me">
-  <div class="terminal-header">
-    <span class="circle red"></span>
-    <span class="circle yellow"></span>
-    <span class="circle green"></span>
-  </div><br><br>
-  <pre>
-<span class="key">&gt; Bolu.currentLocation</span>
-<span class="string">"San Jose, CA"</span>
 
-<span class="key">&gt; Bolu.contactInfo</span>
-<span class="array">["<a href="mailto:j.chi2241@gmail.com">j.chi2241@gmail.com</a>", "<a href="#">LinkedIn</a>", "<a href="#">github</a>"], "<a href="#">X</a>"]</span>
 
-<span class="key">&gt; Bolu.resume</span>
-<span class="string"><a href="Bolu.pdf">"Bolu.pdf"</a></span>
 
-<span class="key">&gt; Bolu.interests</span>
-<span class="array">["Music", "basketball", "cooking", "starcraft"]</span>
 
-<span class="key">&gt; Bolu.education</span>
-<span class="string">"B.Tech. Computer Science - Federal University of Technology, Akure"</span>
 
-<span class="key">&gt; Bolu.skills</span>
-<span class="array">["Flutter", "JavaScript", "Python", "React", "Redux", "git"]</span>
-  </pre>
+<div class="about-more">
+<div class="about-more-container">
+  <div class="about-more-content">
+    <h1 class="about-more-title">I'm Shotayo Bolu</h1>
+    <h2 class="about-more-subtitle">A mobile developer <a href="#" style="color:grey; font-size:18px;">Hire me</a></h2>
+    <p class="about-more-text">
+      With 14 years of experience in digital, I’ve shaped my work across borders and disciplines – from filmmaking to product design. I’ve collaborated with French brands L’Oréal Pro and RATP on UX research.
+   
+      Being neurodivergent, I see the world a bit differently, which sometimes helps me spot gaps and turn them into opportunities. I like to look beyond the immediate solutions, anticipate long-term impacts and design accessible experiences.
+    </p>
+    
+    <a href="#project_list" class="about-more-button custom-btn-link">See Projects →</a>
+  </div>
+
+  <div class="about-more-image">
+    <img src="images/profile.jpg" alt="Profile Picture">
+  </div>
 </div>
+
+
+</div>
+
+
+
+
+
+
+    <!-- Skill level '-->
+    <section class="project py-5" id="project">
+
+
+    <div class="skill-rating">
+
+    <div class="skill-rating-container">
+  <div class="skill-column">
+    <div class="skill-item">
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 100%;">
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+      <h3 class="skill-title">Flutter Development</h3>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 100%;">
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+      <h3 class="skill-title">Mobile App Design</h3>
+    </div>
+  </div>
+
+  <div class="skill-column">
+    <div class="skill-item">
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 100%;">
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+      <h3 class="skill-title">Web Development</h3>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 100%;">
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+      <h3 class="skill-title">UI/UX Skills</h3>
+    </div>
+  </div>
+  
+</div>
+
+
+    </div>
+
+ 
+                    
+    </section>     
+
+
+
+
+
+
+<div class="about-mee">
+
+<div class="about-container">
+  <div class="about-content">
+    <h1 class="about-title">Mobile Development | Flutter </h1>
+    <p class="about-subtitle">
+     
+    </p>
+
+    <div class="about-info">
+      <div class="info-item">
+        <h3>Currently</h3>
+        <p>Product designer at MAIF</p>
+      </div>
+      <div class="info-item">
+        <h3>Latest work</h3>
+        <p><a href="#">Accessibility: play your cards right</a></p>
+      </div>
+      <div class="info-item">
+        <h3>Location</h3>
+        <p>Tours, France</p>
+      </div>
+    </div>
+
+    <a href="#about" class="about-buttons">Download Resume →</a>
+  </div>
+
+  <div class="about-image">
+    <img src="images/profile.jpg" alt="Profile Picture">
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
 
 
 
@@ -193,7 +261,7 @@
   
 
         </div>
-    </section>
+
 
 
 
@@ -243,6 +311,21 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const progresses = document.querySelectorAll('.skill-progress');
+    progresses.forEach(progress => {
+      const width = progress.style.width;
+      progress.style.width = '0';
+      setTimeout(() => {
+        progress.style.width = width;
+      }, 200);
+    });
+  });
+</script>
+
 
   </body>
 </html>
