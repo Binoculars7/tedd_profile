@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload Portfolio</title>
+  <link rel="stylesheet" href="css/upload.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="upload-form">
+  <h1>Add New Project 🚀</h1>
+  <form id="projectForm">
+    <input type="file" id="projectImage" required />
+    <input type="text" id="projectTitle" placeholder="Project Title" required />
+    <textarea id="projectAbout" placeholder="About the project..." required></textarea>
+    <input type="text" id="projectTags" placeholder="Tags (comma separated)" required />
+    <input type="url" id="projectLiveLink" placeholder="Live Page Link" required />
+    <input type="url" id="projectSourceLink" placeholder="Source Code Link" required />
+    <button type="submit" class="submit-btn">Upload Project ✨</button>
+  </form>
+</div>
+
+<div class="projects">
+  <!-- Projects will be loaded here -->
+</div>
+
+<!-- Firebase SDKs -->
+
+
+
+
+<!-- Firebase SDKs FIRST -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+
+<script>
+// Your Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDfD_vVvuRWRtNT5PrLjlPstFK0Hzdlv6k",
+  authDomain: "tedd-844bf.firebaseapp.com",
+  projectId: "tedd-844bf",
+  storageBucket: "tedd-844bf.appspot.com",
+  messagingSenderId: "64861423680",
+  appId: "1:64861423680:web:d87ccd4c5a2bcb086837a5"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const storage = firebase.storage();
+
+document.getElementById('projectForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const imageFile = document.getElementById('projectImage').files[0];
+  const title = document.getElementById('projectTitle').value;
+  const about = document.getElementById('projectAbout').value;
+  const tags = document.getElementById('projectTags').value.split(',').map(tag => tag.trim());
+  const liveLink = document.getElementById('projectLiveLink').value;
+  const sourceLink = document.getElementById('projectSourceLink').value;
+
+  if (!imageFile) {
+    alert("Please upload an image!");
+    return;
+  }
+
+  try {
+    // Upload Image
+    const storageRef = storage.ref('projects/' + Date.now() + '-' + imageFile.name);
+    const uploadTask = await storageRef.put(imageFile);
+    
+    const imageUrl = await uploadTask.ref.getDownloadURL();
+
+    // Upload Project Details
+    await db.collection('projects').add({
+      title,
+      about,
+      tags,
+      liveLink,
+      sourceLink,
+      imageUrl,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+
+    alert('✅ Project uploaded successfully! 🎉');
+    document.getElementById('projectForm').reset();
+  } catch (error) {
+    console.error('Error uploading project:', error);
+    alert('❌ Error uploading project.');
+  }
+});
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

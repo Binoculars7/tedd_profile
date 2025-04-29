@@ -1,0 +1,23 @@
+{
+  "name": "tedd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Binoculars7/tedd_profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Binoculars7/tedd_profile/issues"
+  },
+  "homepage": "https://github.com/Binoculars7/tedd_profile#readme",
+  "description": "",
+  "dependencies": {
+    "firebase": "^11.6.1"
+  }
+}
